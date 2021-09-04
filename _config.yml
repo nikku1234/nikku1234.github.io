@@ -102,12 +102,12 @@ social-network-links:
 #  snapchat: deanat78
 #  instagram: deanat78
 #  youtube: user/deanat78
-#  spotify: yourname
+ spotify: Nikku
  # telephone: "+17164304720"
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
-google-scholar: "x7l3r4AAAAJ"
+# google-scholar: "x7l3r4AAAAJ"
 
 # Select which share links to show in posts
 share-links-active:
@@ -116,7 +116,7 @@ share-links-active:
   google: true
   linkedin: true
   # stackoverflow: true
-  google-scholar: true
+  # google-scholar: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
