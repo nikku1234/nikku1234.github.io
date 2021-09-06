@@ -115,8 +115,8 @@ share-links-active:
   # facebook: true
   google: true
   linkedin: true
-  # stackoverflow: true
-  # google-scholar: true
+  stackoverflow: true
+  google-scholar: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
