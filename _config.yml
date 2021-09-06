@@ -91,23 +91,25 @@ author:
 social-network-links:
   # rss: false
   email: "nikhilramesh1234@gmail.com"
-  # facebook: nikhil.ramesh.itsme
   github: nikku1234
   twitter: nikkunikhil1234
+  linkedin: nikhilramesh1234
+  google-scholar: "x7l3r4AAAAJ"
+  spotify: l8kcoxwxfuxu34r6hq85pad96
+  stackoverflow: 8118078/nikku1234
+  telephone: "+17164304720"
 #  reddit: yourname
 #  google-plus: +DeanAttali
-  linkedin: nikhilramesh1234
 #  xing: yourname
-  stackoverflow: 8118078/nikku1234
 #  snapchat: deanat78
 #  instagram: deanat78
 #  youtube: user/deanat78
-  spotify: l8kcoxwxfuxu34r6hq85pad96
-  telephone: "+17164304720"
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
-  google-scholar: "x7l3r4AAAAJ"
+# facebook: nikhil.ramesh.itsme
+
+
 
 # Select which share links to show in posts
 share-links-active:
