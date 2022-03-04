@@ -9,7 +9,7 @@ image: /img/logos/coder.jpg
  -->
  
  I currently work as a **Research Assistant** in [Artificial Intelligence Innovation Laboratory](https://www.buffalo.edu/ai/research/laboratories-and-groups/innovation-lab.html)(A2IL) under [Dr David Doermann](https://cse.buffalo.edu/~doermann/). My research involves 
-Federated Learning, Medical Image Analysis using GAN, Player Reidentification in Sport Videos.
+Federated Learning, Medical Image Analysis, Player Reidentification in Sport Videos.
 
 I am also the **Teaching Assistant** of *CSE-610-Special Topics*, [Automated Analysis of Sporting Event Videos](https://cse.buffalo.edu/~doermann/LinkedInfo/CSE610-Syllabus%20(Spring%202022)). 
 
