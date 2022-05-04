@@ -23,7 +23,7 @@ description: Hi!
 
 # List of links in the navigation bar
 navbar-links:
-  #Resume: "https://nikku1234.github.io/resume/mydoc.pdf"
+  Resume: "https://nikku1234.github.io/resume/new.pdf"
   About Me: "aboutme"
   Learning: "learning"
   # COVID-19: "https://nikku1234-corona.netlify.app"
