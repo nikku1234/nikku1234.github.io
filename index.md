@@ -146,31 +146,6 @@ subtitle: A glimpse into my world
 
 /* ... keep existing specific card styles but ensure they use variables ... */
 
-</style>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    // Stagger animation for bento items
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry, index) => {
-            if (entry.isIntersecting) {
-                // Add delay based on index/order for staggering
-                setTimeout(() => {
-                    entry.target.classList.add('in-view');
-                }, index * 100); 
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -20px 0px'
-    });
-
-    document.querySelectorAll('.bento-item').forEach(item => {
-        observer.observe(item);
-    });
-});
-</script>
 .bento-item:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 48px rgba(0,0,0,0.08);
@@ -254,3 +229,27 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // Stagger animation for bento items
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                // Add delay based on index/order for staggering
+                setTimeout(() => {
+                    entry.target.classList.add('in-view');
+                }, index * 100); 
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -20px 0px'
+    });
+
+    document.querySelectorAll('.bento-item').forEach(item => {
+        observer.observe(item);
+    });
+});
+</script>
