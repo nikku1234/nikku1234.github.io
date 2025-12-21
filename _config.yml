@@ -28,6 +28,7 @@ author: Nikhil Ramesh
 
 navbar-links:
   About Me: "aboutme"
+  Experience: "experience"
   Resume: "https://nikku1234.github.io/resume/nikhil_ramesh_latest_resume.pdf"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
@@ -168,7 +169,8 @@ navbar-var-length: false
 #mobile-theme-col: "#0085A1"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-#site-css:
+site-css:
+  - "/assets/css/apple-style.css"
 #  - "/assets/css/custom-styles.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
