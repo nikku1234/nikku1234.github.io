@@ -27,7 +27,7 @@ author: Nikhil Ramesh
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  Blog: "blog"
   Experience: "experience"
   Resume: "https://nikku1234.github.io/resume/nikhil_ramesh_latest_resume.pdf"
   Resources:
