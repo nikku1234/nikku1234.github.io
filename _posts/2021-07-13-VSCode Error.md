@@ -4,7 +4,7 @@ title: Remote SSH Error with VSCode
 #gh-repo:
 #gh-badge: [star, fork, follow]
 tags: [self]
-image: /img/vs.png
+image: /assets/img/vs.png
 ---
 
 ### **Warning: no access to tty vscode**

@@ -5,7 +5,7 @@ subtitle: Python 3.9
 #gh-repo:
 #gh-badge: [star, fork, follow]
 tags: [python,3.9,new features]
-image: /img/logos/python.png
+image: /assets/img/logos/python.png
 ---
 
 #### What's new in Python 3.9 ??

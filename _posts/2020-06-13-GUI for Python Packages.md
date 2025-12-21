@@ -5,7 +5,7 @@ subtitle: Using tkinter
 gh-repo: https://github.com/nikku1234/Gui-for-Python-Package-Installation
 gh-badge: [star, fork, follow]
 tags: [pip,python,env,tensorflow,pytorch]
-image: /img/logos/python.png
+image: /assets/img/logos/python.png
 ---
 # GUI for Python Packages
 

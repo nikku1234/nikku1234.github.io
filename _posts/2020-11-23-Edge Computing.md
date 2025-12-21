@@ -4,7 +4,7 @@ title: Edge Computing
 #gh-repo:
 #gh-badge: [star, fork, follow]
 tags: [iot,edge computing]
-image: ../img/edge-computing/icon.jpg
+image: /assets/img/edge-computing/icon.jpg
 
 ---
 
