@@ -31,19 +31,44 @@ h6 {
 }
 
 /* Navbar Overrides */
+/* Navbar Overrides */
 .navbar-custom {
-    background-color: var(--glass-bg);
+    background-color: var(--glass-bg) !important;
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: none !important;
 }
 
 .navbar-custom .navbar-brand,
-.navbar-custom .nav li a {
-    color: var(--text-color);
+.navbar-custom .navbar-nav .nav-link {
+    color: var(--text-color) !important;
     font-weight: 500;
-    text-transform: none;
     font-size: 14px;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.avatar-container {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.avatar-img-border {
+    padding: 0;
+    box-shadow: none;
+    background: transparent;
+}
+
+.avatar-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* Hero / Header */
