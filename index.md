@@ -51,7 +51,7 @@ subtitle: A glimpse into my world
   </div>
 </div>
 
-</style>
+
 
 <style>
 /* Hero Section */
