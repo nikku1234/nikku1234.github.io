@@ -7,7 +7,7 @@ subtitle: A glimpse into my world
 <div class="bento-grid">
   <div class="bento-item bio-card">
     <h3>Hi, I'm Nikhil.</h3>
-    <p>I'm a <strong>Software Dev Engineer 2</strong> at <strong>Amazon Robotics</strong> and a Master's Student at the <strong>University at Buffalo</strong>.</p>
+    <p>I'm a <strong>Software Dev Engineer 2</strong> at <strong>Amazon Robotics</strong> based in <strong>Boston, MA</strong>. I hold a Master's Degree from the <strong>University at Buffalo</strong>.</p>
     <p>At Amazon, I work on the Performance Platform Team building large-scale simulations for autonomous and manipulation robots.</p>
   </div>
 
