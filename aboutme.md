@@ -7,8 +7,8 @@ subtitle: A glimpse into my world
 <div class="bento-grid">
   <div class="bento-item bio-card">
     <h3>Hi, I'm Nikhil.</h3>
-    <p>I'm a Master's Student at the <strong>University at Buffalo</strong>, passionate about applying Deep Learning to real-time applications.</p>
-    <p>Currently, I'm a Research Assistant at the <a href="https://www.buffalo.edu/ai/research/laboratories-and-groups/innovation-lab.html">AI Innovation Lab (A2IL)</a> under Dr. David Doermann, working on Federated Learning and Medical Image Analysis.</p>
+    <p>I'm a <strong>Software Dev Engineer 2</strong> at <strong>Amazon Robotics</strong> and a Master's Student at the <strong>University at Buffalo</strong>.</p>
+    <p>At Amazon, I work on the Performance Platform Team building large-scale simulations for autonomous and manipulation robots. Simultaneously, I research Deep Learning and Medical Image Analysis at the <a href="https://www.buffalo.edu/ai/research/laboratories-and-groups/innovation-lab.html">AI Innovation Lab (A2IL)</a>.</p>
   </div>
 
   <div class="bento-item photo-card">
@@ -18,11 +18,12 @@ subtitle: A glimpse into my world
   <div class="bento-item skills-card">
     <h4>Core Interests</h4>
     <div class="tags-cloud">
+      <span class="tag">Robotics</span>
+      <span class="tag">Simulations</span>
       <span class="tag">Deep Learning</span>
-      <span class="tag">Medical Imaging</span>
-      <span class="tag">Federated Learning</span>
-      <span class="tag">GANs</span>
       <span class="tag">Computer Vision</span>
+      <span class="tag">Automation</span>
+      <span class="tag">Medical Imaging</span>
     </div>
   </div>
 
