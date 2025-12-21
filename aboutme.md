@@ -18,12 +18,13 @@ subtitle: A glimpse into my world
   <div class="bento-item skills-card">
     <h4>Core Interests</h4>
     <div class="tags-cloud">
-      <span class="tag">Robotics</span>
-      <span class="tag">Simulations</span>
-      <span class="tag">Deep Learning</span>
-      <span class="tag">Computer Vision</span>
-      <span class="tag">Automation</span>
-      <span class="tag">Medical Imaging</span>
+      <span class="tag">CI/CD</span>
+      <span class="tag">Software Design</span>
+      <span class="tag">Software Architecture</span>
+      <span class="tag">Integration for different systems</span>
+      <span class="tag">Autonomous Robots</span>
+      <span class="tag">Manipulation Robots</span>
+      <span class="tag">High Scale Simulations</span>
     </div>
   </div>
 
