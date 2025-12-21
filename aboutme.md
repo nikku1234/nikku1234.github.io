@@ -8,7 +8,7 @@ subtitle: A glimpse into my world
   <div class="bento-item bio-card">
     <h3>Hi, I'm Nikhil.</h3>
     <p>I'm a <strong>Software Dev Engineer 2</strong> at <strong>Amazon Robotics</strong> and a Master's Student at the <strong>University at Buffalo</strong>.</p>
-    <p>At Amazon, I work on the Performance Platform Team building large-scale simulations for autonomous and manipulation robots. Simultaneously, I research Deep Learning and Medical Image Analysis at the <a href="https://www.buffalo.edu/ai/research/laboratories-and-groups/innovation-lab.html">AI Innovation Lab (A2IL)</a>.</p>
+    <p>At Amazon, I work on the Performance Platform Team building large-scale simulations for autonomous and manipulation robots.</p>
   </div>
 
   <div class="bento-item photo-card">
