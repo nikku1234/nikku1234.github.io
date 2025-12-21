@@ -14,19 +14,19 @@ image: /assets/img/logos/python.png
 
    `There's a new operator "|" that can be used to merge two dictionaries.`
 
-   ![1](../img/python3.9/1.png)
+   ![1](/assets/img/python3.9/1.png)
 
 2. Updating dictionaries
 
    `Another new operator "|=" will let you update dictionaries.`
 
-   ![2](../img/python3.9/2.png)
+   ![2](/assets/img/python3.9/2.png)
 
 3. Removing the prefix and suffix of a string
 
    `There are two new methods added to the str object to remove the prefix and suffix of the string.`
 
-   ![3](../img/python3.9/3.png)
+   ![3](/assets/img/python3.9/3.png)
 
 
 

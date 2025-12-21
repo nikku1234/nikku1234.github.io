@@ -4,7 +4,7 @@ title: Where am I?
 #gh-repo:
 #gh-badge: [star, fork, follow]
 tags: [semester,self]
-image: /img/logos/me1.png
+image: /assets/img/logos/me1.png
 ---
 
 ### **Where am I?**

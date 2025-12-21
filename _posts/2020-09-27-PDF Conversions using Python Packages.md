@@ -5,7 +5,7 @@ subtitle: Python Conversions
 #gh-repo:
 #gh-badge: [star, fork, follow]
 tags: [python,package]
-image: /img/logos/pdf.png
+image: /assets/img/logos/pdf.png
 ---
 
 #### Python Packages to Convert pdf to different formats
@@ -26,7 +26,7 @@ In this article, I will be recommending few python packages which can be used to
 
 #### PDF To WORD
 
-![image](../img/pdf/pdf-word.jpg)
+![image](/assets/img/pdf/pdf-word.jpg)
 
 ###### Package name : pdf2docx
 

@@ -4,7 +4,7 @@ title: A current computer graduate prespective.
 #gh-repo:
 #gh-badge: [star, fork, follow]
 tags: [computer,self,graduate]
-image: /img/perspective/presp.jpg
+image: /assets/img/perspective/presp.jpg
 
 ---
 

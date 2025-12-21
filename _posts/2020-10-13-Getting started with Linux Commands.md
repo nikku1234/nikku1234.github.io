@@ -5,7 +5,7 @@ subtitle: Linux
 #gh-repo:
 #gh-badge: [star, fork, follow]
 tags: [linux,newbie,basic commands]
-image: ../img/logos/linux-logo.png
+image: /assets/img/logos/linux-logo.png
 
 ---
 
@@ -31,7 +31,7 @@ To get the shell
 
 Gives the name of the shell
 
-![1](../img/linux_basic/1.png)
+![1](/assets/img/linux_basic/1.png)
 
 `uname-a uname-r`
 
@@ -53,7 +53,7 @@ Displays the uptime of the system
 
 Displays the time alone the uptime
 
-<img src="../img/linux_basic/2.png" alt="2" style="zoom:150%;" />
+<img src="/assets/img/linux_basic/2.png" alt="2" style="zoom:150%;" />
 
 `man`
 
@@ -63,7 +63,7 @@ Manuals of the commands
 
 Gives the host ip address
 
-![3](../img/linux_basic/3.png)
+![3](/assets/img/linux_basic/3.png)
 
 `mkdir`
 
@@ -73,4 +73,4 @@ To create a directory
 
 To remove one or more directories
 
-![1](../img/linux_basic/4.png)
+![1](/assets/img/linux_basic/4.png)

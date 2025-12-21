@@ -17,7 +17,7 @@ At its basic level, edge computing brings computation and data storage closer to
 
 Edge computing was developed due to the exponential growth of IoT devices, which connect to the internet for either receiving information from the cloud or delivering data back to the cloud. And many IoT devices generate enormous amounts of data during the course of their operations.
 
-![](../img/edge-computing/img2.png)
+![](/assets/img/edge-computing/img2.png)
 
 # How Edge Computing Works
 
@@ -29,7 +29,7 @@ Next we had personal computers, which was the first time regular people really o
 
 We’re firmly in the cloud computing era. Many of us still own personal computers, but we mostly use them to access centralized services like Dropbox, Gmail, Office 365, and Slack. Additionally, devices like Amazon Echo, Google Chromecast, and the Apple TV are powered by content and intelligence that’s in the cloud.
 
-![](../img/edge-computing/img1.jpg)
+![](/assets/img/edge-computing/img1.jpg)
 
 ## MOST OF THE NEW OPPORTUNITIES FOR THE “CLOUD” LIE AT THE “EDGE”
 
@@ -87,7 +87,7 @@ Now imagine that the motion sensor computation is moved to the network edge. Wha
 
 Additionally, the cloud server would now only be responsible for storing the important footage, meaning that the server could communicate with a higher number of cameras without getting overloaded. This is what edge computing looks like.
 
-![](../img/edge-computing/img4.jpg)
+![](/assets/img/edge-computing/img4.jpg)
 
 ## What are other possible use cases for edge computing?
 

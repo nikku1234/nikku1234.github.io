@@ -4,7 +4,7 @@ title: Robotic Process Automation
 #gh-repo:
 #gh-badge: [star, fork, follow]
 tags: [rpa]
-image: /img/rpa/rpa-logo.jpg
+image: /assets/img/rpa/rpa-logo.jpg
 
 ---
 
@@ -19,7 +19,7 @@ Robotic Process Automation is the technology that allows anyone today to configu
 
 Robotic Process Automation bots have the same digital skillset as people—and then some. RPA bots are easy to set up, use, and share. If you know how to record video on your phone, you’ll be able to configure RPA bots. Think of RPA bots as a Digital Workforce that can interact with any system or application.It’s as intuitive as hitting record, play, and stop buttons and using drag-and-drop to move files around at work. RPA bots can be scheduled, cloned, customised, and shared to execute business processes throughout the organisation. For example, bots are able to copy-paste, scrape web data, make calculations.
 
-![computing](../img/rpa/map_1.jpg)
+![computing](/assets/img/rpa/map_1.jpg)
 
 
 
@@ -71,4 +71,4 @@ RPA can reduce processing costs by up to 80%. In less than 12 months, most enter
 
 
 
-![computing](../img/rpa/rpa-1.jpg)
+![computing](/assets/img/rpa/rpa-1.jpg)

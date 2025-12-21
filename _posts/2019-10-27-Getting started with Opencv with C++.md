@@ -4,7 +4,7 @@ title: Getting started with Opencv with C++
 gh-repo: nikku1234/Computer-Vision--SLAM-
 gh-badge: [star, fork, follow]
 tags: [opencv,getting-started,c++,xcode]
-image: /img/logos/opencv.png
+image: /assets/img/logos/opencv.png
 ---
 
 # Configuration for Mac - Xcode

@@ -5,7 +5,7 @@ subtitle: Nvidia GPU Configurations
 #gh-repo:
 #gh-badge: [star, fork, follow]
 tags: [nvidia,gpu,sli,configuration]
-image: /img/logos/nvidia.png
+image: /assets/img/logos/nvidia.png
 ---
 
 # NVIDIA SLI Configurations (Multiple GPU’s)

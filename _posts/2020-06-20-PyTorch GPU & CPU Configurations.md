@@ -5,7 +5,7 @@ subtitle: PyTorch
 #gh-repo:
 #gh-badge: [star, fork, follow]
 tags: [pytorch,cpu,gpu,deep-learning,configurations]
-image: /img/logos/pytorch.png
+image: /assets/img/logos/pytorch.png
 ---
 # PyTorch CPU/GPU configurations
 

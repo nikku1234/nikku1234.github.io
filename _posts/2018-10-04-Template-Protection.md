@@ -4,7 +4,7 @@ title: Template Protection Using Multimodal Biometrics
 gh-repo: nikku1234/Template-Protection-Using-Multimodal-Biometrics
 gh-badge: [star, fork, follow]
 tags: [template,Protection,multimodal,matlab,iris,fingerprint]
-image: /img/template/logo.png
+image: /assets/img/template/logo.png
 ---
 
 A simple cancellable biometric filtering method is implemented to increase the security of the
@@ -18,20 +18,20 @@ Template Protection Using Multimodal Biometrics using Fingerprint and Iris.
 
 Measurement and statistical analysis of people's unique physical and behavioral characteristics.Mainly used for Security purpose.Every person can be accurately identified intrinsic physical or behavioral traits.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 
-![](/img/template/diagram.png)
+![](/assets/img/template/diagram.png)
 
 # Fingerprint Processing
 
 ## Step 1: Read the Fingerprint Image
-![firstimage](/img/template/Picture1.png)\
+![firstimage](/assets/img/template/Picture1.png)\
 
 *Fingerprint Image records white background (pixel intensity value = 255) and the foreground uses the lower intensity values*
 
 ## Step 2: Histogram Equalization
-![secondimage](/img/template/Picture2.png)\
+![secondimage](/assets/img/template/Picture2.png)\
 
 Image is reversed so that filters can work. It would be apt if the foreground has brighter intensity value. Hence the Image is reversed, so that the resulting intensity value is computed as  (255 - original intensity value).To improve the contrast , histogram equalization is carried out.Histogram is a plot of pixel count against the intensity value. Contrast  corresponds to the amonut of difference between various features in an image. Here, the difference between fingerprint and the background should be susceptibly large, so that further extraction of features would be effective.Histogram equalization distribute the intensity values uniformly across the intensity range which improves contrast as shown below.
-![picture3](/img/template/Picture3.png)
+![picture3](/assets/img/template/Picture3.png)
 
 Source: http://www.sci.utah.edu/~acoste/uou/Image/project1/Arthur_COSTE_Project_1_report.html)
 
@@ -41,14 +41,14 @@ For Binarization, Thresholding is usually used wherein each intensity value is c
 Binarized_Image=adaptiveThres(double(FFTImage),32); % 32 corresponds to the block size.
 Adaptive Thresholding refers to using a different threshold for every local window (block of the image). Here, Image is divided into 32 * 32 blocks and mean of the block is used as the threshold
 
-![](/img/template/Screenshot 2018-12-01 at 11.49.52 PM.png)
+![](/assets/img/template/Screenshot 2018-12-01 at 11.49.52 PM.png)
 
-![picture5](/img/template/picture5.png)
+![picture5](/assets/img/template/picture5.png)
 
 ## Step 4: Orientation Estimation to detect the ROI
 Finds the horizontal edges , Vertical edges using Sobel Operator
 
-![](/img/template/Screenshot 2018-12-01 at 11.51.07 PM.png)
+![](/assets/img/template/Screenshot 2018-12-01 at 11.51.07 PM.png)
 
 Algorithm:
 Compute
@@ -68,12 +68,12 @@ Using the computed value , ROI (Region of Interest comprising of fingerprint is 
 
 Intermediate Image Generated after background certainty is as follows
 
-![](/img/template/Screenshot 2018-12-01 at 11.52.29 PM.png)
+![](/assets/img/template/Screenshot 2018-12-01 at 11.52.29 PM.png)
 
 ## Step 5: Image Thinning and Minutiae Extraction
 Finally , Image is thinned to obtain the skeleton (thick lines are reduced to thinner lines). Ridge endings and branches are to be identified for which 3*3 mask is run over the thinned image
 
-![picture8](/img/template/picture8.png)
+![picture8](/assets/img/template/picture8.png)
 
 
 # Iris
@@ -89,4 +89,4 @@ Feature extraction using Canny Edge Detection Algorithm
 Dimension reduction using PCA Algorithm
 
 Fusion of reduced features
-![](/img/template/image.png)
+![](/assets/img/template/image.png)

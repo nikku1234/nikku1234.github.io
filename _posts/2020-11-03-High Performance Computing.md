@@ -4,7 +4,7 @@ title: High Performance Computing
 #gh-repo:
 #gh-badge: [star, fork, follow]
 tags: [supercomputer,High-Performance,101]
-image: /img/hcp/icon.png
+image: /assets/img/hcp/icon.png
 
 ---
 
@@ -20,7 +20,7 @@ HPCs are interconnected computer systems that use legacy software and are afford
 
 
 
-![computing](../img/hcp/computing.jpg)
+![computing](/assets/img/hcp/computing.jpg)
 
 
 
@@ -66,7 +66,7 @@ The process of integration can either be through parallel file systems or a clus
 
 The advantages of HPC cloud-based services include a scalable, on-demand and inexpensive option for handling demanding simulations.
 
-![computing](../img/hcp/supercomputer.jpg)
+![computing](/assets/img/hcp/supercomputer.jpg)
 
 
 

@@ -5,7 +5,7 @@ subtitle: Nvidia
 #gh-repo:
 #gh-badge: [star, fork, follow]
 tags: [nvidia,cpu,gpu,deep-learning,configurations,fan-control,sli]
-image: /img/logos/nvidia.png
+image: /assets/img/logos/nvidia.png
 ---
 ## Nvidia Drivers
 

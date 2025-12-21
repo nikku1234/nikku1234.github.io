@@ -4,13 +4,13 @@ title: Optical Character Recognizer
 gh-repo: nikku1234/Optical-Character-Recogonizer
 gh-badge: [star, fork, follow]
 tags: [ocr,character,RECOGNITION,ann,]
-image: /img/ocr/ocrlogo2.png
+image: /assets/img/ocr/ocrlogo2.png
 
 ---
 # Optical-Character-Recogonizer
 To develop a system that can recognize handwritten characters from an image.
 
-![](/img/ocr/ocr1.png)  
+![](/assets/img/ocr/ocr1.png)  
 
 # OCR is a process of converting images of typed, handwritten or printed text into machine-editable text.
 
@@ -33,21 +33,21 @@ fold: 0-9 -- cross-validation fold
 p_i_j: 0/1 -- value of pixel in row i, column j
 
 # MODULE 1 – DIGIT RECOGNITION
-![](/img/ocr/module1.png)
+![](/assets/img/ocr/module1.png)
 # DIGIT RECOGNITION
 # Block Diagram
-![](/img/ocr/module1block.png)
+![](/assets/img/ocr/module1block.png)
 
 The dataset is imported. The matrix of each image in the dataset are stored in arrays. Then the image is taken as input. Pre-processing is done such that the image is converted to grey-scale image. Then the image is converted to array and is matched with the arrays of dataset. Thus, the digit is recognized.
 
 # INPUT IMAGE
-![](/img/ocr/module1input.png)
+![](/assets/img/ocr/module1input.png)
 
 # OUTPUT
-![](/img/ocr/outputocr1.png)
+![](/assets/img/ocr/outputocr1.png)
 
 # MODULE 2 – ALPHABET RECOGNITION
-![](/img/ocr/module2.png)
+![](/assets/img/ocr/module2.png)
 
 # ALPHABET RECOGNITION
 
@@ -57,8 +57,8 @@ This module matches the handwritten alphabets present in a dataset. This applica
 The feed forward neural network is trained with a part of the dataset and is tested with the alphabets present in the input.
 The neural network predicts the alphabets that matches the alphabets in the input string.
 
-![](/img/ocr/module2block.png)
+![](/assets/img/ocr/module2block.png)
 
 # OUTPUT
 
-![](/img/ocr/ocr2out.png)
+![](/assets/img/ocr/ocr2out.png)

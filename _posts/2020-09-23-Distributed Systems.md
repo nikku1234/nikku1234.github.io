@@ -5,12 +5,12 @@ subtitle: Design Patterns
 #gh-repo:
 #gh-badge: [star, fork, follow]
 tags: [DesignPatterns,java,software,Distributed,Systems]
-image: /img/logos/distri.png
+image: /assets/img/logos/distri.png
 ---
 
 In this post we will be discussing about Distributed Systems. The five main characteristics of Distributed Systems are:
 
-![Distributed systems](../img/distribut_system/distributed_computing.jpg)
+![Distributed systems](/assets/img/distribut_system/distributed_computing.jpg)
 
 - Scalability
 - Reliability
@@ -30,7 +30,7 @@ Generally, the performance of a system, although designed (or claimed) to be sca
 
 There are two ways by scalability is introduced, Horizontal Scaling and Vertical Scaling.
 
-![Scaling](../img/distribut_system/horizontal_vertical.png)
+![Scaling](/assets/img/distribut_system/horizontal_vertical.png)
 
 
 
@@ -48,7 +48,7 @@ Good examples of horizontal scaling are Cassandra and MongoDB as they both provi
 
 Reliability is the probability a system will fail in a given period. In simple terms, a distributed system is considered reliable if it keeps delivering its services even when one or several of its software or hardware components fail. Reliability represents one of the main characteristics of any distributed system, since in such systems any failing machine can always be replaced by another healthy one, ensuring the completion of the requested task.
 
-![reliable](../img/distribut_system/reliable.png)
+![reliable](/assets/img/distribut_system/reliable.png)
 
 Take the example of a large electronic commerce store like Amazon, where one of the primary requirement is that any user transaction should never be canceled due to a failure of the machine that is running that transaction. For instance, if a user has added an item to their shopping cart, the system is expected not to lose it. A reliable distributed system achieves this through redundancy of both the software components and data. If the server carrying the user’s shopping cart fails, another server that has the exact replica of the shopping cart should replace it.
 
@@ -68,7 +68,7 @@ If a system is reliable, it is available. However, if it is available, it is not
 
 Let’s take the example of an online retail store that has 99.99% availability for the first two years after its launch. However, the system was launched without any information security testing. The customers are happy with the system, but they don’t realize that it isn’t very reliable as it is vulnerable to likely risks. In the third year, the system experiences a series of information security incidents that suddenly result in extremely low availability for extended periods of time. This results in reputational and financial damage to the customers.
 
-![reliab vs avaib](../img/distribut_system/Untitled.png)
+![reliab vs avaib](/assets/img/distribut_system/Untitled.png)
 
 ------
 
@@ -103,4 +103,4 @@ Remember this image can also be a distributed system!!.
 
 
 
-![T](../img/distribut_system/distri.png)
+![T](/assets/img/distribut_system/distri.png)

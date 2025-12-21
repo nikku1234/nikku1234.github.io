@@ -5,7 +5,7 @@ subtitle: Tensorflow
 #gh-repo:
 #gh-badge: [star, fork, follow]
 tags: [tensorflow,cpu,gpu,deep-learning,configurations]
-image: /img/logos/tensorflow.png
+image: /assets/img/logos/tensorflow.png
 ---
 # GPU/CPU Environment Configurations Tensorflow
 
