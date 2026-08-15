@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import heroGraphic from "../assets/hero.png";
+import heroGraphic from "../assets/hero-robotics.avif";
 
 const focusAreas = [
   { number: "01", title: "Robotics at scale", text: "Simulation platforms that pressure-test autonomous and manipulation robots before they reach the floor.", path: "/experience" },
