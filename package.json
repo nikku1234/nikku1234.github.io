@@ -1,5 +1,5 @@
 {
-  "name": "default-project",
+  "name": "nikhil-ramesh-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,8 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@cloudscape-design/components": "^3.0.1330",
-    "@cloudscape-design/global-styles": "^1.0.62",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-router-dom": "^7.18.1"

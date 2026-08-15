@@ -1,6 +1,5 @@
 import { BrowserRouter, NavLink, Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import "@cloudscape-design/global-styles/index.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
@@ -41,7 +40,6 @@ function SiteShell() {
   const [progress, setProgress] = useState(0);
   useEffect(() => {
     document.documentElement.dataset.theme = dark ? "dark" : "light";
-    document.documentElement.classList.toggle("awsui-dark-mode", dark);
     localStorage.setItem("theme", dark ? "dark" : "light");
   }, [dark]);
   useEffect(() => {

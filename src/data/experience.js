@@ -1,11 +1,11 @@
 const experience = [
   {
     company: "Amazon Robotics",
-    role: "SDE II - Performance Platform & ARQA Automation",
+    role: "SDE II - Performance Platform Engineering",
     period: "2022 - Present",
     description:
-      "Building simulations and infrastructure for testing large-scale robotics simulations across Amazon's fulfillment network. Work on the ARQA (Automated Robot Quality Assurance) Automation Team and the Performance Platform Team, designing systems that run large-scale simulations and the underlying infrastructure to support them. Proficient in C++, Java, Kotlin, and TypeScript, with deep expertise across AWS services for distributed, high-throughput simulation workloads.",
-    tags: ["Robotics", "Simulation", "AWS", "C++", "Java", "Kotlin", "TypeScript", "Infrastructure"],
+      "Leading the design of fleet-scale simulation and validation systems for new robotics solutions. The platform supports autonomous robotics in Unity, manipulation robotics in Drake, and end-to-end simulation workflows in Unreal Engine, with exposure to MuJoCo. Building scalable CI/CD infrastructure with AWS Batch, ECS, EC2, EKS, and Step Functions; developer-facing UIs; and emerging agentic triage systems using Amazon Bedrock AgentCore concepts, Agent-to-Agent protocols, memory, and gateways.",
+    tags: ["Robotics", "Unity", "Drake", "Unreal Engine", "MuJoCo", "AWS", "CI/CD", "Agentic AI", "Technical Leadership"],
   },
   {
     company: "Amazon Robotics",

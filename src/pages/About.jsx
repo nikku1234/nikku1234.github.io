@@ -1,95 +1,17 @@
-import Container from "@cloudscape-design/components/container";
-import Header from "@cloudscape-design/components/header";
-import Box from "@cloudscape-design/components/box";
-import Grid from "@cloudscape-design/components/grid";
-import Badge from "@cloudscape-design/components/badge";
-import Link from "@cloudscape-design/components/link";
-import SpaceBetween from "@cloudscape-design/components/space-between";
-
-const skills = [
-  "CI/CD", "Software Architecture", "Autonomous Robots", "Machine Learning",
-  "Deep Learning", "Python", "C++", "JavaScript", "TypeScript", "AWS",
-  "Docker", "TensorFlow", "PyTorch", "OpenCV", "React", "Node.js",
-  "Git", "Linux", "Kubernetes", "PostgreSQL",
+const capabilityGroups = [
+  { label: "Languages", items: ["Java", "Kotlin", "C++", "TypeScript", "JavaScript", "Python"] },
+  { label: "Web & application", items: ["React", "Spring", "Dagger", "JUnit", "TestNG"] },
+  { label: "Cloud & delivery", items: ["AWS Batch", "ECS", "EC2", "EKS", "Step Functions", "CI/CD"] },
+  { label: "Simulation", items: ["Unity", "Drake", "Unreal Engine", "MuJoCo"] },
+  { label: "Agentic systems", items: ["AgentCore", "Agent-to-Agent", "Memory", "Gateway", "Triage agents"] },
 ];
 
 export default function About() {
-  return (
-    <div>
-      <Container>
-        <SpaceBetween direction="vertical" size="xl">
-          <div style={{ textAlign: "center", padding: "20px 0" }}>
-            <Box variant="h1" tagOverride="h1">About Me</Box>
-            <Box variant="awsui-context-info-header" color="text-body-secondary" fontSize="heading-l">
-              SDE II at Amazon Robotics | MS Computer Science, University at Buffalo
-            </Box>
-          </div>
-
-          <Grid columns={2} disableResponsive={false} gutts={{ horizontal: "m", vertical: "m" }}>
-            <div>
-              <Container header={<Header variant="h2">Bio</Header>}>
-                <Box variant="p">
-                  I'm a Software Development Engineer II at Amazon Robotics, where I build
-                  simulations and infrastructure for testing large-scale robotics simulations across
-                  Amazon's fulfillment network. I work on the ARQA (Automated Robot Quality
-                  Assurance) Automation Team and the Performance Platform Team, designing systems
-                  that run large-scale simulations and the infrastructure to support them.
-                </Box>
-                <Box variant="p" padding={{ top: "s" }}>
-                  I'm proficient in C++, Java, Kotlin, and TypeScript, with deep expertise across AWS
-                  services for distributed, high-throughput simulation workloads. I joined Amazon as
-                  an SDE I after completing my Master's, and was promoted to SDE II after two years.
-                </Box>
-                <Box variant="p" padding={{ top: "s" }}>
-                  Prior to Amazon, I completed my Master of Science in Computer Science at the
-                  University at Buffalo (2021-2022). During my graduate studies, I worked as a
-                  Research Assistant at the AI Innovation Lab (A2IL) under Dr. David Doermann,
-                  focusing on federated learning and medical image analysis. I also served as a
-                  Teaching Assistant for CSE 610 Special Topics. My research interests lie at the
-                  intersection of machine learning, robotics, and distributed systems.
-                </Box>
-              </Container>
-            </div>
-
-            <div>
-              <Container header={<Header variant="h2">Contact</Header>}>
-                <SpaceBetween direction="vertical" size="m">
-                  <div>
-                    <Box variant="awsui-context-info-header" fontSize="heading-s">Email</Box>
-                    <Link href="mailto:nikhilramesh96@gmail.com">nikhilramesh96@gmail.com</Link>
-                  </div>
-                  <div>
-                    <Box variant="awsui-context-info-header" fontSize="heading-s">GitHub</Box>
-                    <Link href="https://github.com/nikku1234" external>github.com/nikku1234</Link>
-                  </div>
-                  <div>
-                    <Box variant="awsui-context-info-header" fontSize="heading-s">LinkedIn</Box>
-                    <Link href="https://linkedin.com/in/nikhil-ramesh" external>linkedin.com/in/nikhil-ramesh</Link>
-                  </div>
-                  <div>
-                    <Box variant="awsui-context-info-header" fontSize="heading-s">Google Scholar</Box>
-                    <Link href="https://scholar.google.com" external>Google Scholar Profile</Link>
-                  </div>
-                </SpaceBetween>
-              </Container>
-            </div>
-          </Grid>
-
-          <Container header={<Header variant="h2">Skills & Technologies</Header>}>
-            <SpaceBetween direction="horizontal" size="s" wrapItems>
-              {skills.map((skill) => (
-                <Badge key={skill}>{skill}</Badge>
-              ))}
-            </SpaceBetween>
-          </Container>
-
-          <Container>
-            <Box variant="awsui-context-info-header" color="text-body-secondary" fontSize="heading-s" fontStyle="italic" textAlign="center">
-              "Engineering is not just about writing code - it's about solving problems that matter."
-            </Box>
-          </Container>
-        </SpaceBetween>
-      </Container>
-    </div>
-  );
+  return <div className="about-page full-page">
+    <section className="inner-page-hero"><p className="eyebrow"><span /> About / approach</p><h1>Platform thinking.<br /><em>Robotics impact.</em></h1><p>I’m a software engineer and technical leader working where distributed systems, simulation engines, cloud infrastructure, developer experience, and physical robotics meet.</p></section>
+    <section className="about-story"><div className="story-index"><span>01</span><p>What I do</p></div><div className="story-copy"><p className="large-copy">At Amazon Robotics, I lead and build performance-platform solutions that help teams validate new robotic systems at fleet scale.</p><p>My work spans autonomous robotics simulations in Unity, manipulation robotics in Drake, end-to-end simulation and validation using Unreal Engine, and exposure to MuJoCo. Underneath those environments, I design CI/CD and workload infrastructure across AWS Batch, ECS, EC2, EKS, and Step Functions.</p><p>I care equally about the systems around the simulation: interfaces that make platforms understandable, automated triage that reduces operational friction, and technical direction that helps teams turn ambiguous robotics problems into dependable engineering solutions.</p></div></section>
+    <section className="operating-principles"><p className="eyebrow">How I operate</p><div>{[["01","Design for scale","Treat the thousandth workload as a first-class requirement, not an afterthought."],["02","Validate end to end","Connect build, orchestration, simulation, telemetry, triage, and decision-making."],["03","Build for engineers","Powerful platforms need clear interfaces, useful abstractions, and fast feedback loops."],["04","Lead through systems","Create direction, align teams, and make complex technical choices legible."]].map(([n,title,text])=><article key={n}><span>{n}</span><h3>{title}</h3><p>{text}</p></article>)}</div></section>
+    <section className="capability-section"><div><p className="eyebrow">Technical range</p><h2>One engineer.<br />Multiple layers.</h2></div><div className="capability-matrix">{capabilityGroups.map(group=><div key={group.label}><h3>{group.label}</h3><p>{group.items.map(item=><span key={item}>{item}</span>)}</p></div>)}</div></section>
+    <section className="contact-panel"><div><p className="eyebrow">Connect</p><h2>Let’s build the system behind the system.</h2></div><div><a href="mailto:nikhilramesh96@gmail.com">nikhilramesh96@gmail.com <span>↗</span></a><a href="https://linkedin.com/in/nikhil-ramesh" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a><a href="https://github.com/nikku1234" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></div></section>
+  </div>;
 }

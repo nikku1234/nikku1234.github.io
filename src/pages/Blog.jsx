@@ -1,114 +1,15 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import Container from "@cloudscape-design/components/container";
-import Header from "@cloudscape-design/components/header";
-import Box from "@cloudscape-design/components/box";
-import Badge from "@cloudscape-design/components/badge";
-import Link from "@cloudscape-design/components/link";
-import Pagination from "@cloudscape-design/components/pagination";
-import SpaceBetween from "@cloudscape-design/components/space-between";
-import TextFilter from "@cloudscape-design/components/text-filter";
-import Select from "@cloudscape-design/components/select";
+import { useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 import blogPosts from "../data/blogPosts";
 
-const POSTS_PER_PAGE = 6;
-
 export default function Blog() {
-  const navigate = useNavigate();
-  const [page, setPage] = useState(1);
-  const [filterText, setFilterText] = useState("");
-  const [selectedTag, setSelectedTag] = useState(null);
-
-  const allTags = [...new Set(blogPosts.flatMap((p) => p.tags))].sort();
-
-  const filteredPosts = blogPosts.filter((post) => {
-    const matchesText =
-      filterText === "" ||
-      post.title.toLowerCase().includes(filterText.toLowerCase()) ||
-      post.summary.toLowerCase().includes(filterText.toLowerCase());
-    const matchesTag = !selectedTag || post.tags.includes(selectedTag.value);
-    return matchesText && matchesTag;
-  });
-
-  const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE);
-  const paginatedPosts = filteredPosts.slice(
-    (page - 1) * POSTS_PER_PAGE,
-    page * POSTS_PER_PAGE
-  );
-
-  return (
-    <div>
-      <Container>
-        <SpaceBetween direction="vertical" size="xl">
-          <div style={{ textAlign: "center", padding: "20px 0" }}>
-            <Box variant="h1" tagOverride="h1">Blog</Box>
-            <Box variant="awsui-context-info-header" color="text-body-secondary">
-              Thoughts on software engineering, machine learning, and technology.
-            </Box>
-          </div>
-
-          <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-            <div style={{ flex: 1 }}>
-              <TextFilter
-                filteringText={filterText}
-                onChange={({ detail }) => {
-                  setFilterText(detail.filteringText);
-                  setPage(1);
-                }}
-                placeholder="Search posts..."
-              />
-            </div>
-            <div style={{ width: "250px" }}>
-              <Select
-                selectedOption={selectedTag}
-                onChange={({ detail }) => {
-                  setSelectedTag(detail.selectedOption);
-                  setPage(1);
-                }}
-                options={[{ label: "All tags", value: "" }, ...allTags.map((t) => ({ label: t, value: t }))]}
-                placeholder="Filter by tag"
-                empty="No tags found"
-              />
-            </div>
-          </div>
-
-          <SpaceBetween direction="vertical" size="m">
-            {paginatedPosts.map((post) => (
-              <Container key={post.id}>
-                <SpaceBetween direction="vertical" size="s">
-                  <Link
-                    fontSize="heading-m"
-                    onFollow={() => navigate(`/blog/${post.id}`)}
-                  >
-                    {post.title}
-                  </Link>
-                  <Box variant="awsui-context-info-header" color="text-body-secondary" fontSize="body-s">
-                    {new Date(post.date).toLocaleDateString("en-US", {
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    })}
-                  </Box>
-                  <Box variant="p">{post.summary}</Box>
-                  <SpaceBetween direction="horizontal" size="xs" wrapItems>
-                    {post.tags.map((tag) => (
-                      <Badge key={tag}>{tag}</Badge>
-                    ))}
-                  </SpaceBetween>
-                </SpaceBetween>
-              </Container>
-            ))}
-          </SpaceBetween>
-
-          {totalPages > 1 && (
-            <Pagination
-              currentPageIndex={page}
-              pagesCount={totalPages}
-              onChange={({ detail }) => setPage(detail.currentPageIndex)}
-            />
-          )}
-        </SpaceBetween>
-      </Container>
-    </div>
-  );
+  const [query, setQuery] = useState("");
+  const [tag, setTag] = useState("All");
+  const tags = ["All", ...new Set(blogPosts.flatMap(post => post.tags))];
+  const filtered = useMemo(() => blogPosts.filter(post => (tag === "All" || post.tags.includes(tag)) && `${post.title} ${post.summary}`.toLowerCase().includes(query.toLowerCase())), [query, tag]);
+  return <div className="blog-page full-page">
+    <section className="inner-page-hero"><p className="eyebrow"><span /> Notes / archive</p><h1>Thinking in<br /><em>public.</em></h1><p>An evolving archive of computer vision, machine learning, distributed computing, developer tools, and experiments.</p></section>
+    <section className="journal-controls"><label><span>SEARCH_ARCHIVE</span><input value={query} onChange={event=>setQuery(event.target.value)} placeholder="Type a topic…" /></label><div>{tags.slice(0,10).map(item=><button className={tag===item?"is-active":""} key={item} onClick={()=>setTag(item)}>{item}</button>)}</div></section>
+    <section className="journal-list">{filtered.map((post,index)=><Link to={`/blog/${post.id}`} className="journal-entry" key={post.id}><span>{String(index+1).padStart(2,"0")}</span><time>{new Date(post.date).toLocaleDateString("en-US",{year:"numeric",month:"short",day:"numeric"})}</time><div><h2>{post.title}</h2><p>{post.summary}</p><small>{post.tags.join(" / ")}</small></div><b>↗</b></Link>)}{filtered.length===0&&<p className="empty-state">No notes match that query.</p>}</section>
+  </div>;
 }
